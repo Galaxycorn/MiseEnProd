@@ -10,4 +10,4 @@ Choix du repository public https://github.com/Galaxycorn/MiseEnProd et de la bra
 
 Port utilisé : TCP 80 
 
-Lien du service : tcp-mo1.mogenius.io:30934
+Lien du service : tcp-mo1.mogenius.io:61935

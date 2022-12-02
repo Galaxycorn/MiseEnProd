@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-    <head>
-         <meta charset="=utf8"
-    </head>
-    <body>
-        <h1>Bonjour.</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Demo</title>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Si page vierge -> Ne fonctionne pas</h1>
+</body>
+</html>
+    <script>
+        async function getCenter() {
+            let url = 'http://localhost:8080/api/ville/Paris';
+            try {
+                let res = await fetch(url);
+                return await res.json();
+            } catch (error) {
+                console.log(error)
+            }
+        }
+       
+        async function renderUsers() {
+            let users = await getCenter();
+            let html = '';
+            html += '<h1> Liste des centres de vaccination à Paris</h1>'
+            users.forEach(user => {
+                let htmlSegment = `<div class="user">
+                                    <h2>Nom : ${user.nom} </br> Adresse :  ${user.adresse}</h2>
+                                </div>`;
 
-        <h1>Nombre de visite : </h1>
-    </body>
+                html += htmlSegment;
+            });
+           
+            let container = document.querySelector('.container');
+            container.innerHTML = html;
+}
+
+renderUsers();
+
+    </script>
