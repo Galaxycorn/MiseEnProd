@@ -7,7 +7,7 @@ Pour le déploiment :
 Pour l'utiliser : http://localhost:8080
 
 Quand la page html s'ouvre elle exécute le script à l'intérieur pour fetch tous les centres de Paris et affiche leur nom et adresse. Cependant 
-comme elle est sensée lire ce qu'il y a dans la base de données et qu'elle est vide elle ne renvoie rien et vu que je n'ai pas réussi à le faire 
+comme elle est censée lire ce qu'il y a dans la base de données et qu'elle est vide elle ne renvoie rien et vu que je n'ai pas réussi à la faire 
 fonctionner j'ai pas eu le temps de faire un formulaire d'ajout. 
 
 Pour l'utilisation de mogenius : 
