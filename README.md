@@ -1,13 +1,5 @@
 # MiseEnProd
 
-Rendu TP GAILLARD Julian n°31806139
-
-MiseEnProd et de la branche master en laissant les ressources allouées par défaut. 
-
-Port utilisé : TCP 8080
-
-Lien du service : http://tcp-mo1.mogenius.io:62986/
-
 Pour le déploiment : 
 
 ``` docker compose up --build ```
@@ -22,6 +14,8 @@ Pour l'utilisation de mogenius :
 
 - Deux services, l'un pour le serveur et l'autre pour l'application 
 - Plusieurs variables en secrets qui sont disponibles dans application.properties pour se connecter à la base de données 
+
+Lien du service : http://tcp-mo1.mogenius.io:62986/
 
 Actuellement j'en suis à une erreur 404 pour le lien du service et je n'arrive pas à la résoudre car localement elle fonctionne bien...
 
