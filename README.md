@@ -1,13 +1,27 @@
 # MiseEnProd
 
-Rendu TP GAILLARD Julian 
+Rendu TP GAILLARD Julian n°31806139
 
-Création d'un compte sur https://mogenius.com/
+MiseEnProd et de la branche master en laissant les ressources allouées par défaut. 
 
-Ajout d'un service dans la partie "Stages & services" en séléctionnant le service "Bring your own code"
+Port utilisé : TCP 8080
 
-Choix du repository public https://github.com/Galaxycorn/MiseEnProd et de la branche main en laissant les ressources allouées par défaut. 
+Lien du service : http://tcp-mo1.mogenius.io:62986/
 
-Port utilisé : TCP 80 
+Pour le déploiment : 
 
-Lien du service : tcp-mo1.mogenius.io:61935
+``` docker compose up --build ```
+
+Pour l'utiliser : http://localhost:8080
+
+Quand la page html s'ouvre elle exécute le script à l'intérieur pour fetch tous les centres de Paris et affiche leur nom et adresse. Cependant 
+comme elle est sensée lire ce qu'il y a dans la base de données et qu'elle est vide elle ne renvoie rien et vu que je n'ai pas réussi à le faire 
+fonctionner j'ai pas eu le temps de faire un formulaire d'ajout. 
+
+Pour l'utilisation de mogenius : 
+
+- Deux services, l'un pour le serveur et l'autre pour l'application 
+- Plusieurs variables en secrets qui sont disponibles dans application.properties pour se connecter à la base de données 
+
+Actuellement j'en suis à une erreur 404 pour le lien du service et je n'arrive pas à la résoudre car localement elle fonctionne bien...
+
